@@ -1,0 +1,205 @@
+body {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: bottom;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.text-intro {
+  width: 70%;
+  padding: 1% 0px;
+}
+
+.text-intro h1 {
+  font-weight: 500;
+  font-size: 4vmin;
+  color: #ff0063;
+}
+
+.text-intro p {
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+}
+
+.btn-intro {
+  padding: 1% 0px;
+}
+
+.btn-intro button {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff0063;
+  border: 2px solid #ff0063;
+  border-radius: 5px;
+  color: #fefefe;
+  font-weight: 600;
+}
+
+.btn-intro button:hover {
+  background-color: #ed0d63;
+  border-color: #ed0d63;
+  color: #fefefe;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transform: scale(1.1);
+}
+
+.arrow {
+  width: 20px;
+  margin: 0px 5px;
+}
+
+.arrow:hover {
+  color: #fefefe;
+}
+
+/* Mengatur tata letak dan jarak antara kartu-kartu */
+.cardContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+/* Mengatur gaya kartu */
+.card {
+  color: #f1f6f9;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  animation: ease-in-out;
+  transition: transform 0.3s;
+}
+
+/* Efek zoom saat kartu dihover */
+.card:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Mengatur dimensi gambar dalam kartu */
+.content img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Mengatur tampilan konten kartu saat dihover */
+.card .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* Efek putaran kartu saat dihover */
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+/* Mengatur tampilan depan dan belakang kartu */
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+/* Mengatur tampilan depan kartu */
+.front {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Mengatur tampilan elemen pertama dalam kartu */
+.content span:nth-child(1) {
+  transform: rotate(0deg);
+  margin-left: -50%;
+}
+
+.content span img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Mengatur tampilan depan kartu, termasuk warna latar belakang dan tata letak */
+.card .front {
+  background-color: #212a3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.30);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.30);
+}
+
+.card .back {
+  background-color: #212a3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(0deg);
+  font-family: 'Playpen Sans', cursive;
+  font-size: 12px;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.30);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.30);
+}
+
+/* Mengatur tampilan belakang kartu, termasuk warna teks */
+.card .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  color: white;
+}
+
+/* Mengatur garis horizontal */
+hr {
+  width: 100%;
+}
+
+.front image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.front div {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.front .text {
+  padding-bottom: 25px;
+}
+
+a {
+  text-decoration: none !important;
+  color: white;
+}

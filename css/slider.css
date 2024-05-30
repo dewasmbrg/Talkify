@@ -1,0 +1,48 @@
+.photo-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.photo {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+.photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.photo::after {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  bottom: -1rem;
+  left: -16rem;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  width: 16rem;
+  opacity: 0;
+  transform: rotate(6deg);
+}
+.photo:hover::after {
+  left: 100%;
+  opacity: 0.15;
+  transition: inset 1s;
+}
+.photo:hover {
+  transform: scale(1.1) !important;
+}
+.photo.even {
+  transform: rotate(2deg);
+}
+.photo:not(.even) {
+  transform: rotate(-2deg);
+}

@@ -1,0 +1,66 @@
+.tes {
+    position: absolute;
+    top: -9999;
+    left: -9999;
+}
+
+.title-section {
+    line-height: 1.6;
+    margin: 2% 0px;
+}
+
+.title-section h1 {
+    color: #ff0063;
+}
+
+.title-section p {
+    color: rgba(31, 31, 31);
+    font-weight: 500;
+}
+
+section .list-food {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-food article {
+    background: #fdfdfd;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 23%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.header-card img {
+    width: 100%;
+}
+
+.body-card {
+    padding: 10px;
+}
+
+.body-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-card span {
+    color: #ff0063;
+}
+
+.body-card h3 {
+    color: #394867;
+    font-size: 16px;
+}
+
+.body-card p {
+    font-size: 13px;
+    color: rgb(31, 31, 31);
+}
+
+.error {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

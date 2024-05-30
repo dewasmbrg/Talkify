@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+    footer {
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    footer div {
+        margin: 10px 0px 10px 5%;
+        font-size: 12px;
+    }
+
+    footer h3 {
+        font-size: 15px;
+    }
+}

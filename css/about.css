@@ -1,0 +1,109 @@
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0px 4% 0px;
+}
+
+.profile-area img {
+    width: 30%;
+}
+
+.profile-text {
+    padding: 0px 20px;
+    line-height: 1.6;
+}
+
+.profile-text p {
+    color: rgb(31, 31, 31);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.profile-text span {
+    color: #ff0063;
+}
+
+.profile-text h1::after {
+    content: "I'm a Web Developer";
+    color: rgba(57, 72, 103, 0.6);
+}
+
+.socmed-area {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.title h1 {
+    color: #ff0063;
+    /* text-decoration: underline;
+    text-underline-offset: 5px; */
+}
+
+.title p {
+    color: rgb(31, 31, 31);
+    font-weight: 500;
+    color: rgba(31, 31, 31);
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    padding: 2% 0px;
+}
+
+.body a {
+    text-decoration: none;
+    margin-right: 2%;
+}
+
+.body article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 227px;
+    height: 134px;
+    background: #fdfdfd;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.body article:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.body article img {
+    width: 50px;
+}
+
+.body .man-sit {
+    width: 100px;
+    margin-left: auto;
+}
+
+.linkedin span {
+    color: #0a66c2;
+}
+
+.twitter span {
+    color: #55acee;
+}
+
+.github span {
+    color: #000000;
+}

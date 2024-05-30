@@ -1,0 +1,119 @@
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        margin-top: -999px;
+        position: fixed;
+        z-index: 20;
+        transition: all 0.5s ease;
+        top: 0;
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -20%;
+    }
+
+    .nav-links li {
+        padding-bottom: 30%;
+    }
+
+    .nav-menuIcon {
+        width: 30px;
+        position: fixed;
+        top: 30px;
+        right: 10px;
+        padding: 0px 15px;
+        z-index: 20;
+    }
+
+    .nav-closeIcon {
+        width: 30px;
+        position: fixed;
+        top: 30px;
+        right: 10px;
+        padding: 0px 15px;
+        z-index: 20;
+    }
+
+    .nav-logo {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        margin-top: -999px;
+        z-index: 20;
+        padding-top: 20px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-logo span {
+        padding: 10px 0px;
+        font-size: 4vmin;
+    }
+
+    .mobile-menu {
+        margin-top: -999px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #fcfcfc;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        transition: all 0.5s ease;
+    }
+
+    .menu-slide {
+        margin-top: 0px;
+    }
+
+    .nav-menuIcon:hover {
+        cursor: pointer;
+    }
+
+    .nav-closeIcon:hover {
+        cursor: pointer;
+    }
+
+    .nav-logo-mobile {
+        display: flex;
+        align-items: center;
+        padding: 2% 5%;
+        font-weight: 700;
+    }
+
+    .nav-logo-mobile a {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-logo-mobile img {
+        width: 60px;
+    }
+
+    .nav-logo-mobile span {
+        font-size: 3vmin;
+        font-family: Lemonada;
+        padding: 0px 10px;
+    }
+
+    .nav-logo-mobile span::after {
+        content: 'Healthy';
+        color: #ff0063;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        background-color: #ffff;
+        width: 100%;
+    }
+}
